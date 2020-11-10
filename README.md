@@ -53,3 +53,11 @@ yarn && yarn start
 - A list of users signed up for each course section should be visible.
 
 - A user should be able to register for a course and remove themselves from the course.
+
+## Documentation
+
+### Design
+
+Entity relationship diagram for how users and courses are related to eachother
+
+![entity diagram](https://github.com/iraleigh/fullstack-take-home/blob/master/doc/real-takehome-datamodel.svg)
