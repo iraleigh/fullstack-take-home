@@ -214,7 +214,7 @@ INSERT INTO sections (
 
 -- ************* Create Users *****************
 INSERT INTO users(name) VALUES ('iain');
-INSERT INTO users(name) VALUES ('sarah');
+INSERT INTO users(name) VALUES ('sara');
 INSERT INTO users(name) VALUES ('liz');
 INSERT INTO users(name) VALUES ('ryan');
 INSERT INTO users(name) VALUES ('val');

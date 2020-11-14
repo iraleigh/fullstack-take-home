@@ -7,7 +7,7 @@ class Course extends Component {
         description: "",
         sessions: [],
         sections: [],
-        enrolled: false
+        enrolled: -1
     }
 
     load = () => {
@@ -28,7 +28,10 @@ class Course extends Component {
         const sectionsResponse = await fetch(`/courses/${courseId}/sections`);
         course.sections = await sectionsResponse.json();
 
-        // There be dragons here:
+        
+        course.enrolled = -1;
+
+        // Here be dragons:
         // Pretty ugly way to do this, could use refactoring;
         // potentionally from the API to avoid the an API call
         // per section on the front end
@@ -36,7 +39,10 @@ class Course extends Component {
             const studentsResponse = await fetch(`/sections/${course.sections[i].id}/enrollment`);
             const students = await studentsResponse.json();
             course.sections[i].students = students;
-            course.enrolled = course.enrolled || !!students.find(s => this.props.userId === s.userid);
+            if (!!students.find(s => this.props.userId === s.userid)) {
+                course.enrolled = course.sections[i].id;
+            }
+            
         }
 
         return course;
@@ -67,9 +73,17 @@ class Course extends Component {
     }
 
     renderEnrollmentOption = section => {
-        return !this.state.enrolled
-            ? (<span onClick={this.enroll(section.id)}>enroll</span>)
-            : (<span onClick={this.unenroll(section.id)}>unenroll</span>);
+        if (this.props.userId === -1) {
+            return;
+        }
+
+        if (this.state.enrolled === -1) {
+            return (<button onClick={this.enroll(section.id)}>enroll</button>);
+        }
+
+        if (this.state.enrolled === section.id) {
+            return (<button onClick={this.unenroll(section.id)}>unenroll</button>)
+        }
     }
 
     componentDidMount() {
@@ -91,7 +105,7 @@ class Course extends Component {
                         <li key={session.id}>
                             <h4>{session.name}</h4>
                             <p>{session.description}</p>
-                            <p>{this.state.enrolled && session.content}</p>
+                            <p>{this.state.enrolled !== -1 && session.content}</p>
                         </li>
                     ))}
                 </ul>
@@ -100,7 +114,7 @@ class Course extends Component {
                 <ul>
                     {this.state.sections.map(section => (
                         <li key={section.id}>
-                            <h4>{section.nickname} - {this.renderEnrollmentOption(section)}</h4>
+                            <h4>{section.nickname}  {this.renderEnrollmentOption(section)}</h4>
                             <p>Starts On: {section.startdate}</p>
                             <ol>
                                 {(section.students || []).map(student => (

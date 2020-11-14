@@ -19,7 +19,7 @@ class Users extends Component {
         const response = await fetch(`/users?name=${name}`);
         const user = await response.json();
 
-        return user.id;
+        return user;
     };
 
 
@@ -27,7 +27,7 @@ class Users extends Component {
         return (
             <div>
                 <input onChange={this.handleInput} type='text' placeholder='Name' />
-                <button onClick={this.changeUser}>Sign Up</button>
+                <button onClick={this.changeUser}>Sign In</button>
             </div>
         );
     }

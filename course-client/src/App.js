@@ -13,18 +13,19 @@ import './App.css';
 
 class App extends Component {
 	state = {
-		userId: 0
+		userId: -1,
+		userName: ""
 	}
 
-	changeUser = id => {
-		console.log(id);
-		this.setState({ userId: id });		
+	changeUser = user => {
+		this.setState({ userId: user.id, userName: user.name });
 	}
 
 	render() {
 		return (
 			<Router>
 				<div>
+					<p>{this.state.userName.length === 0 ? "" : `Welcome, ${this.state.userName}`}</p>
 					<nav>
 						<ul>
 							<li>
