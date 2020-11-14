@@ -11,6 +11,16 @@ router.get('/', async (req, res) => {
     res.json(courses);
 });
 
+router.get('/:courseId', async (req, res) => {
+    const { courseId } = req.params;
+    const { rows } = await db.query('SELECT * FROM courses WHERE id = $1', [courseId]);
+    const courses = rows.map(course => {
+        course.name = course.name.trim();
+        return course;
+    })
+    res.json(courses[0]);
+});
+
 router.get('/:courseId/sections', async (req, res) => {
     const { courseId } = req.params;
     const { rows } = await db.query('SELECT * FROM sections WHERE courseId = $1', [courseId]);

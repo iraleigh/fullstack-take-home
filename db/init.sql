@@ -57,7 +57,7 @@ INSERT INTO sessions (
 	1,
 	'Decide on a topic',
 	'Time to brainstorm on that idea you''ve been wanting to write about for ages. What will you say? Do you have enough to write about? Let''s find out!',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus ornare suspendisse sed nisi lacus sed viverra. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Duis ut diam quam nulla porttitor massa. Ut ornare lectus sit amet est. Viverra nam libero justo laoreet sit amet cursus sit amet. Purus in massa tempor nec. Sed odio morbi quis commodo odio aenean sed. Nisi scelerisque eu ultrices vitae auctor. Tellus at urna condimentum mattis pellentesque. Aliquam sem et tortor consequat id porta. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Morbi leo urna molestie at elementum eu facilisis sed odio. Tristique magna sit amet purus gravida quis. Donec pretium vulputate sapien nec sagittis aliquam. Amet est placerat in egestas erat imperdiet sed euismod nisi. Varius quam quisque id diam vel quam elementum pulvinar etiam. Pulvinar mattis nunc sed blandit libero volutpat. Id diam maecenas ultricies mi eget mauris pharetra et.'
 );
 INSERT INTO sessions ( 
 	courseId,
@@ -70,7 +70,7 @@ INSERT INTO sessions (
 	2,
 	'Write your first chapter',
 	'Now that you''ve decided what you''ll write about, it''s time to dive in and knock that first chapter out! They say that once you''ve jumped the first hurdle of writing the first chapter, the rest will come naturally!',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec. Vel orci porta non pulvinar. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Turpis massa sed elementum tempus egestas. Ullamcorper velit sed ullamcorper morbi tincidunt. Convallis convallis tellus id interdum velit laoreet id. Eget sit amet tellus cras adipiscing. Semper risus in hendrerit gravida rutrum quisque non tellus. In ornare quam viverra orci sagittis. Nulla facilisi nullam vehicula ipsum a arcu.'
 );
 INSERT INTO sessions ( 
 	courseId,
@@ -83,7 +83,7 @@ INSERT INTO sessions (
 	3,
 	'Decide on a title',
 	'Whether you want it to be clever, hard-hitting, or mysterious, the title of your book is the first thing people will see of your book. We''ll spend this lesson ideating on titles that make an impact.',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut enim. Tristique senectus et netus et. Fermentum dui faucibus in ornare. Semper viverra nam libero justo. Tincidunt dui ut ornare lectus sit amet est placerat. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra adipiscing at in tellus integer. Nulla porttitor massa id neque. Amet dictum sit amet justo donec. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget arcu dictum varius duis. Ut eu sem integer vitae justo eget magna fermentum. Id aliquet risus feugiat in ante metus dictum at tempor. Ipsum dolor sit amet consectetur adipiscing elit.'
 );
 INSERT INTO sessions ( 
 	courseId,
@@ -96,7 +96,7 @@ INSERT INTO sessions (
 	4,
 	'Finding an Editor',
 	'We''ll wrap up this course by setting you up for success and finding an editor to for you to continue to work with as your writing journey continues.',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut enim. Tristique senectus et netus et. Fermentum dui faucibus in ornare. Semper viverra nam libero justo. Tincidunt dui ut ornare lectus sit amet est placerat. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra adipiscing at in tellus integer. Nulla porttitor massa id neque. Amet dictum sit amet justo donec. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget arcu dictum varius duis. Ut eu sem integer vitae justo eget magna fermentum. Id aliquet risus feugiat in ante metus dictum at tempor. Ipsum dolor sit amet consectetur adipiscing elit.'
 );
 -- **************** Create Course 1 Sections ****************
 INSERT INTO sections ( 
@@ -142,7 +142,7 @@ INSERT INTO sessions (
 	1,
 	'What is Space-Time?',
 	'Is it space? Is it time? Why are these 2 words now linked together? Let''s dive into the mystery!',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut enim. Tristique senectus et netus et. Fermentum dui faucibus in ornare. Semper viverra nam libero justo. Tincidunt dui ut ornare lectus sit amet est placerat. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra adipiscing at in tellus integer. Nulla porttitor massa id neque. Amet dictum sit amet justo donec. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget arcu dictum varius duis. Ut eu sem integer vitae justo eget magna fermentum. Id aliquet risus feugiat in ante metus dictum at tempor. Ipsum dolor sit amet consectetur adipiscing elit.'
 );
 INSERT INTO sessions ( 
 	courseId,
@@ -155,7 +155,7 @@ INSERT INTO sessions (
 	2,
 	'What is a Light-Year?',
 	'Have you ever wondered how we see stars so brightly, but can never visit them? We''ll introduce the concept of light-years and why objects in mirror are WAY farther than they appear.',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut enim. Tristique senectus et netus et. Fermentum dui faucibus in ornare. Semper viverra nam libero justo. Tincidunt dui ut ornare lectus sit amet est placerat. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra adipiscing at in tellus integer. Nulla porttitor massa id neque. Amet dictum sit amet justo donec. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget arcu dictum varius duis. Ut eu sem integer vitae justo eget magna fermentum. Id aliquet risus feugiat in ante metus dictum at tempor. Ipsum dolor sit amet consectetur adipiscing elit.'
 );
 INSERT INTO sessions ( 
 	courseId,
@@ -168,7 +168,7 @@ INSERT INTO sessions (
 	3,
 	'Wormholes - not the ones in your garden',
 	'Are there other universes out there? Are they using the same time we are? What is their construct of time? How do wormholes play into this?',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut enim. Tristique senectus et netus et. Fermentum dui faucibus in ornare. Semper viverra nam libero justo. Tincidunt dui ut ornare lectus sit amet est placerat. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra adipiscing at in tellus integer. Nulla porttitor massa id neque. Amet dictum sit amet justo donec. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget arcu dictum varius duis. Ut eu sem integer vitae justo eget magna fermentum. Id aliquet risus feugiat in ante metus dictum at tempor. Ipsum dolor sit amet consectetur adipiscing elit.'
 );
 INSERT INTO sessions ( 
 	courseId,
@@ -181,7 +181,7 @@ INSERT INTO sessions (
 	4,
 	'Stargazing!',
 	'We''ll wrap up this course by going on a stargazing adventure and talking about the expansion of space. Where is space expanding to? Exactly.',
-	''
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut enim. Tristique senectus et netus et. Fermentum dui faucibus in ornare. Semper viverra nam libero justo. Tincidunt dui ut ornare lectus sit amet est placerat. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra adipiscing at in tellus integer. Nulla porttitor massa id neque. Amet dictum sit amet justo donec. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget arcu dictum varius duis. Ut eu sem integer vitae justo eget magna fermentum. Id aliquet risus feugiat in ante metus dictum at tempor. Ipsum dolor sit amet consectetur adipiscing elit.'
 );
 -- ************** Create Course 2 Sections ******************
 INSERT INTO sections ( 
