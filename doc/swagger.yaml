@@ -29,11 +29,47 @@ paths:
             items:
               $ref: "#/definitions/Course"
   # /courses/{courseId}:
-  # /courses/{courseId}/sessions/{sessionNum}:
-  # /courses/{courseId}/sections:
-  # /courses/{courseId}/sections/{sectionId}:
-  # /courses/{courseId}/sections/{sectionId}/enrollment:
-  /user/{username}:
+  /courses/{courseId}/sessions:
+    get:
+      tags: 
+      - "course"
+      summary: "Get all available sessions for course"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "courseId"
+        in: "path"
+        description: "Course ID that the sessions correspond to."
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "success"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Session"
+  /courses/{courseId}/sections:
+    get:
+      tags: 
+      - "course"
+      summary: "Get all available sessions for course"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "courseId"
+        in: "path"
+        description: "Course ID that the sections correspond to."
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "success"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Section"
+  /users:
     get:
       tags:
       - "user"
@@ -42,7 +78,7 @@ paths:
       - "application/json"
       parameters:
       - name: "username"
-        in: "path"
+        in: "query"
         description: "The name that needs to be fetched. Use user1 for testing. "
         required: true
         type: "string"
@@ -55,15 +91,41 @@ paths:
           description: "Invalid username supplied"
         "404":
           description: "User not found"
-  /user/{username}/enrollment/{sectionId}:
+  /users/{userId}/sections/{sectionId}:
     post:
       tags:
       - "user"
-      summary: "Get user by user name"
+      summary: "Enroll user in section"
       produces:
       - "application/json"
       parameters:
-      - name: "username"
+      - name: "userId"
+        in: "path"
+        description: "The name that needs to be fetched. Use user1 for testing. "
+        required: true
+        type: "string"
+      - name: "sectionId"
+        in: "path"
+        description: "The id of the section to enroll the user in"
+        required: true
+        type: "string"
+      responses:
+        "201":
+          description: "successful enrollment"
+          schema:
+            $ref: "#/definitions/User"
+        "400":
+          description: "Invalid username or sectionId supplied"
+        "404":
+          description: "User or Section not found"
+    delete:
+      tags:
+      - "user"
+      summary: "Unenroll user in section"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "userId"
         in: "path"
         description: "The name that needs to be fetched. Use user1 for testing. "
         required: true
@@ -93,14 +155,6 @@ definitions:
         type: "string"
       description:
         type: "string"
-      sessions:
-        type: "array"
-        items:
-          $ref: "#/definitions/Session"
-      sections:
-        type: "array"
-        items:
-          $ref: "#/definitions/Section"
     xml:
       name: "Course"
   Session:

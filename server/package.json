@@ -4,7 +4,9 @@
   "description": "course-server in express.js",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "pg": "^8.5.0"
   },
   "devDependencies": {},
   "scripts": {
